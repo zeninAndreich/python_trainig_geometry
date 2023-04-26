@@ -1,10 +1,9 @@
 from geom2d import *
 from geom2d.point import Point
 
-l1 = [Point(3, 1), Point(0, 0), Point(1, 2)]
+l = []
 
+for i in range(-5, 6):
+    l.append(Point(i,i*i))
 
-l2 = sorted(l1, key= lambda p: p.distance(Point(0, 0)))
-
-print(l1)
-print(l2)
+print(l)
