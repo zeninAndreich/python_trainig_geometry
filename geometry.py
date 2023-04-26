@@ -6,5 +6,10 @@ l = []
 for i in range(-5, 6):
     l.append(Point(i,i*i))
 
+l2 = []
+
 for el in l:
-    print(el)
+    l2.append(Point(el.x, -el.y))
+
+print(l2)
+print(l)
